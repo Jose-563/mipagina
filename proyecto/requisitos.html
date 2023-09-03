@@ -1,0 +1,56 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Que son?</title>
+<style>
+    h1{color: rgb(251, 251, 251);}
+    p{color: rgb(255, 0, 0);}
+    body{
+            background-color: rgb(10, 3, 51);
+        }
+        ol{color: rgb(255, 0, 0);}
+        li{color: rgb(255, 0, 0);}
+
+   
+</style>
+</head>
+<body>
+    <table >
+        <center><h1>Que son?</h1></center>
+            <center><img src="https://cdn.masmovil.es/embed/3ac9135e63ad82b891bd41f6ac06e3f3fb1589566456/apps-web-progresivas-movil-ordenador.jpg?imagick=1&size=750" width="600px" height="300px"></center>
+        
+            <p>Una PWA, actualmente es compatible con Google Chrome pero no con iOS, técnicamente debe reunir cuatro requisitos:
+            </p>
+            <ol>
+                <li>Un sitio debe ser visitado dos veces con un intervalo de 5 minutos para calificar
+                    En Google Chrome es necesario que los usuarios hayan visitado el sitio que aloja 
+                    el PWA dos veces antes de que el navegador muestre el mensaje para instalar el PWA.
+                    No es la forma más fiable de verificación, pero sí es una manera simple de determinar 
+                    el interés del usuario. Es probable que este parámetro se sustituya por otro más acertado 
+                    en el futuro, pero por ahora los desarrolladores de Google están contentos con esta medida.
+                    </li>
+                <li>Servicio workers: Un servicio worker es un script que permite interceptar y controlar 
+                    cómo un navegador web maneja tus solicitudes de red y el almacenamiento en caché de activos. 
+                    Con los servicios worker, los desarrolladores web pueden crear páginas web rápidas y fiables 
+                    junto con experiencias fuera de línea.</li>
+                <li>JSON Manifest instalado válido al proporcionar un extracto de datos en formato JSON, es posible 
+                    almacenar esta información en caché con la ayuda del service worker. Luego se usa la app shell 
+                    (un modelo o patrón a la hora de crear las aplicaciones) para cargar las reglas CSS y así poder 
+                    entregar una versión sin conexión con capacidades de interfaz de usuario completas.
+                    Cada vez que un visitante carga una nueva página, el service worker ‘cacheará’ el extracto 
+                    JSON y lo almacenará físicamente en la app shell. Este shell es un contenedor autónomo que 
+                    tiene todas las hojas de estilo, scripts, imágenes, fuentes y salidas HTML necesarias para que 
+                    un usuario pueda representar una página completa sin cargar nada más.
+                    </li>
+                <li>Service Worker instalado como decíamos, el service worker es responsable de almacenar en caché todos los archivos, notificaciones push, actualización de contenido, manipulación de datos y mucho más.
+                    Es importante entender que este script funciona independientemente de cualquier aplicación o sitio web que ya exista en el servidor web, trabajando con oyentes de eventos y comandos como “fetch”, que se asemeja a los comandos HTTP “Get / Post / Set”.
+                    Al escuchar las solicitudes de red en el servidor, pero al estar ubicado como un archivo .js en el dispositivo del usuario, el service worker manipulará esas peticiones con respuestas apropiadas, dependiendo de si hay internet o no, permitiendo páginas sin conexión personalizadas.
+                    Una vez que estos cuatro requisitos se implementen correctamente, se le pedirá a los usuarios de teléfonos Android y otros dispositivos compatibles que agregue el PWA a su pantalla de inicio, donde aparecerá un icono similar al de una aplicación regular, y se abrirá en un navegador.
+                    </li>
+            </ol>
+            
+
+        <a href="index.html">regresar al menu</a>
+   </table>
+</body>
+</html>
